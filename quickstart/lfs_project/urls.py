@@ -8,7 +8,7 @@ import os
 DIRNAME = os.path.dirname(__file__)
 
 urlpatterns = patterns("",
-    (r'', include('fischer_app.urls')),
+    (r'', include('lfs.core.urls')),
     (r'^manage/', include('lfs.manage.urls')),
 )
 
