@@ -92,8 +92,7 @@ INSTALLED_APPS = (
     "django.contrib.sitemaps",    
     "pagination",
     'reviews',
-    "tagging",    
-    "contact_form",
+    "tagging",
     "lfs.tests",
     'lfs.core',
     'lfs.caching',
@@ -113,7 +112,6 @@ INSTALLED_APPS = (
     'lfs.tagging',
     'lfs.tax',
     'lfs.utils',
-    "lfstheme",
 )
 
 FORCE_SCRIPT_NAME=""
