@@ -93,6 +93,7 @@ INSTALLED_APPS = (
     "pagination",
     'reviews',
     "tagging",
+    "portlets",
     "lfs.tests",
     'lfs.core',
     'lfs.caching',
@@ -111,7 +112,7 @@ INSTALLED_APPS = (
     'lfs.shipping',
     'lfs.tagging',
     'lfs.tax',
-    'lfs.utils',
+    'lfs.utils',    
 )
 
 FORCE_SCRIPT_NAME=""
