@@ -87,12 +87,12 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     "django.contrib.flatpages",
-    "django.contrib.sitemaps",    
+    "django.contrib.sitemaps",
+    "lfstheme",
     "pagination",
     'reviews',
     "tagging",
     "portlets",
-    "lfstheme",
     "lfs",
     "lfs.tests",
     'lfs.core',
@@ -102,13 +102,13 @@ INSTALLED_APPS = (
     'lfs.checkout',
     "lfs.criteria",
     "lfs.customer",
-    'lfs.mail',    
+    'lfs.mail',
     'lfs.manage',
     'lfs.marketing',
     'lfs.order',
-    'lfs.page',    
+    'lfs.page',
     'lfs.payment',
-    'lfs.portlets',    
+    'lfs.portlets',
     'lfs.search',
     'lfs.shipping',
     'lfs.tagging',
@@ -125,7 +125,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.debug',
     'django.core.context_processors.auth',
     'django.core.context_processors.request',
-    'django.core.context_processors.media',    
+    'django.core.context_processors.media',
     'lfs.core.context_processors.main',
 )
 
@@ -138,7 +138,7 @@ AUTHENTICATION_BACKENDS = (
 INTERNAL_IPS = (
     "127.0.0.1",
 )
-    
+
 # CACHE_BACKEND = 'file:///'
 # CACHE_BACKEND = 'locmem:///'
 # CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
