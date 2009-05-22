@@ -144,7 +144,7 @@ INTERNAL_IPS = (
 # CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
 CACHE_BACKEND = 'dummy:///'
 
-CATEGORY_PREFIX = "kategorie-"
+CATEGORY_PREFIX = "category-"
 LFS_RECENT_PRODUCTS_LIMIT = 5
 
 EMAIL_HOST = ""
