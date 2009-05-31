@@ -8,12 +8,7 @@ import os
 DIRNAME = os.path.dirname(__file__)
 
 urlpatterns = patterns("",
-    (r'', include('lfs.core.urls')),
-    (r'^manage/', include('lfs.manage.urls')),
-)
-
-urlpatterns += patterns("",
-    (r'^contact', include('contact_form.urls')),
+    (r'^contact/', include('contact_form.urls')),
 )
 
 urlpatterns += patterns("",    
@@ -23,4 +18,9 @@ urlpatterns += patterns("",
 urlpatterns += patterns("",    
     (r'^admin/(.*)', admin.site.root),
     (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': os.path.join(DIRNAME, "media"), 'show_indexes': True }),
+)
+
+urlpatterns += patterns("",
+    (r'', include('lfs.core.urls')),
+    (r'^manage/', include('lfs.manage.urls')),
 )
