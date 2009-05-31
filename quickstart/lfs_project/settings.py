@@ -108,7 +108,7 @@ INSTALLED_APPS = (
     'lfs.order',
     'lfs.page',
     'lfs.payment',
-    'lfs.portlets',
+    'lfs.portlet',
     'lfs.search',
     'lfs.shipping',
     'lfs.tagging',
