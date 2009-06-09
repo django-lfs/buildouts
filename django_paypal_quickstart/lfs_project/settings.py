@@ -78,8 +78,6 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join(DIRNAME, "..", "parts", "svn_lfs", "lfstheme", "templates"),
-    os.path.join(DIRNAME, "..", "parts", "svn_lfs", "lfs", "templates"),
 )
 
 INSTALLED_APPS = (
@@ -89,10 +87,13 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     "django.contrib.flatpages",
-    "django.contrib.sitemaps",    
+    "django.contrib.sitemaps",
+    "lfstheme",
     "pagination",
     'reviews',
     "tagging",
+    "portlets",
+    "lfs",
     "lfs.tests",
     'lfs.core',
     'lfs.caching',
@@ -101,12 +102,13 @@ INSTALLED_APPS = (
     'lfs.checkout',
     "lfs.criteria",
     "lfs.customer",
-    'lfs.mail',    
+    'lfs.mail',
     'lfs.manage',
     'lfs.marketing',
     'lfs.order',
-    'lfs.page',    
+    'lfs.page',
     'lfs.payment',
+    'lfs.portlet',
     'lfs.search',
     'lfs.shipping',
     'lfs.tagging',
@@ -117,14 +119,14 @@ INSTALLED_APPS = (
 )
 
 FORCE_SCRIPT_NAME=""
-LOGIN_URL = "/login"
-LOGIN_REDIRECT_URL = "/manage"
+LOGIN_URL = "/login/"
+LOGIN_REDIRECT_URL = "/manage/"
 
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.debug',
     'django.core.context_processors.auth',
     'django.core.context_processors.request',
-    'django.core.context_processors.media',    
+    'django.core.context_processors.media',
     'lfs.core.context_processors.main',
 )
 
@@ -137,7 +139,7 @@ AUTHENTICATION_BACKENDS = (
 INTERNAL_IPS = (
     "127.0.0.1",
 )
-    
+
 # CACHE_BACKEND = 'file:///'
 # CACHE_BACKEND = 'locmem:///'
 # CACHE_BACKEND = 'memcached://127.0.0.1:11211/'

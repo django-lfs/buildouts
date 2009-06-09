@@ -13,7 +13,7 @@ urlpatterns = patterns("",
 )
 
 urlpatterns += patterns("",
-    (r'^contact', include('contact_form.urls')),
+    (r'^contact/', include('contact_form.urls')),
 )
 
 urlpatterns += patterns("",    
