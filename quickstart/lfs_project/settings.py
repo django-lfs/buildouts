@@ -114,6 +114,8 @@ INSTALLED_APPS = (
     'lfs.tagging',
     'lfs.tax',
     'lfs.utils',
+    'paypal.standard.ipn',
+    'paypal.standard.pdt',    
 )
 
 FORCE_SCRIPT_NAME=""
@@ -149,3 +151,6 @@ LFS_RECENT_PRODUCTS_LIMIT = 5
 EMAIL_HOST = ""
 EMAIL_HOST_USER = ""
 EMAIL_HOST_PASSWORD = ""
+
+PAYPAL_RECEIVER_EMAIL = "info@yourbusiness.com"
+PAYPAL_IDENTITY_TOKEN = "set_this_to_your_paypal_pdt_identity_token"
