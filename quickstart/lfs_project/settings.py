@@ -3,7 +3,7 @@
 import os
 DIRNAME = os.path.dirname(__file__)
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -154,3 +154,9 @@ EMAIL_HOST_PASSWORD = ""
 
 PAYPAL_RECEIVER_EMAIL = "info@yourbusiness.com"
 PAYPAL_IDENTITY_TOKEN = "set_this_to_your_paypal_pdt_identity_token"
+LFS_PAYPAL_REDIRECT = True
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
