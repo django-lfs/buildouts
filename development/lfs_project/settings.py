@@ -102,6 +102,7 @@ INSTALLED_APPS = (
     'lfs.checkout',
     "lfs.criteria",
     "lfs.customer",
+    "lfs.export",
     'lfs.mail',
     'lfs.manage',
     'lfs.marketing',
